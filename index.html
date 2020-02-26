@@ -159,7 +159,8 @@ header {
 // Get random quote and display 
 
 function getQuote() {
-  var randomNumber = Math.floor(Math.random() * quotes.length);
+    var randomNumber = Math.floor(Math.random() * (quotes.length - 1)) + 1;
+//  var randomNumber = Math.floor(Math.random() * quotes.length);
   document.getElementById('newQuoteSection').innerHTML = quotes[randomNumber];
 }
 
